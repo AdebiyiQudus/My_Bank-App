@@ -1,6 +1,6 @@
 // insertAdjacentHTML() takes two parameter or argunent which are ('afterbegin', html)
 // afterbegin => This occurs when we inseting a new child element at the beginning of a parent element
-// beforeend => This occurs when we inseting a new child element at the end of a parent element
+// beforeend => This occurs when we are inserting a new child element at the end of a parent element
 // innerHTML returns all the element tags WHILE the textContent returns only the text in the UI
 // beforeend => Order of each new movements elements will be added before the previous ones
 // afterreend => Order of each new movements elements will be added after the previous ones
@@ -373,7 +373,7 @@ btnClose.addEventListener('click', function (e) {
 let sorted = false;
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
-  displayMovements(currentAccount.acc.movements``, !sorted);
+  displayMovements(currentAccount, !sorted);
   sorted = !sorted;
 });
 
