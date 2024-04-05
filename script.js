@@ -376,7 +376,6 @@ btnSort.addEventListener('click', function (e) {
   displayMovements(currentAccount, !sorted);
   sorted = !sorted;
 });
-
 // To get movements from the UI and convert the elements into an array with an event listener
 labelBalance.addEventListener('click', function () {
   const movementsUI = Array.from(
